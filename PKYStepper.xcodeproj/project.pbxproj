@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4752BC181A60B89A00A31EE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4752BC171A60B89A00A31EE5 /* main.m */; };
-		4752BC1B1A60B89A00A31EE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4752BC1A1A60B89A00A31EE5 /* AppDelegate.m */; };
-		4752BC1E1A60B89A00A31EE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4752BC1D1A60B89A00A31EE5 /* ViewController.m */; };
-		4752BC211A60B89A00A31EE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4752BC1F1A60B89A00A31EE5 /* Main.storyboard */; };
-		4752BC231A60B89A00A31EE5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4752BC221A60B89A00A31EE5 /* Images.xcassets */; };
-		4752BC261A60B89A00A31EE5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4752BC241A60B89A00A31EE5 /* LaunchScreen.xib */; };
+		4722A6771A63A76400A8B9A5 /* PKYStepper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4722A6761A63A76400A8B9A5 /* PKYStepper.m */; };
 		4752BC321A60B89A00A31EE5 /* PKYStepperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4752BC311A60B89A00A31EE5 /* PKYStepperTests.m */; };
+		47EC1A0B1A63A7B5009A8D6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EC1A041A63A7B5009A8D6F /* AppDelegate.m */; };
+		47EC1A0C1A63A7B5009A8D6F /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 47EC1A051A63A7B5009A8D6F /* Base.lproj */; };
+		47EC1A0D1A63A7B5009A8D6F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47EC1A061A63A7B5009A8D6F /* Images.xcassets */; };
+		47EC1A0E1A63A7B5009A8D6F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47EC1A071A63A7B5009A8D6F /* Info.plist */; };
+		47EC1A0F1A63A7B5009A8D6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EC1A081A63A7B5009A8D6F /* main.m */; };
+		47EC1A101A63A7B5009A8D6F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EC1A0A1A63A7B5009A8D6F /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +28,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4722A6751A63A76400A8B9A5 /* PKYStepper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKYStepper.h; path = PKYStepper/PKYStepper.h; sourceTree = "<group>"; };
+		4722A6761A63A76400A8B9A5 /* PKYStepper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PKYStepper.m; path = PKYStepper/PKYStepper.m; sourceTree = "<group>"; };
 		4752BC121A60B89A00A31EE5 /* PKYStepper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PKYStepper.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4752BC161A60B89A00A31EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4752BC171A60B89A00A31EE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4752BC191A60B89A00A31EE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4752BC1A1A60B89A00A31EE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4752BC1C1A60B89A00A31EE5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4752BC1D1A60B89A00A31EE5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4752BC201A60B89A00A31EE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4752BC221A60B89A00A31EE5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4752BC251A60B89A00A31EE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4752BC2B1A60B89A00A31EE5 /* PKYStepperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PKYStepperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4752BC301A60B89A00A31EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4752BC311A60B89A00A31EE5 /* PKYStepperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKYStepperTests.m; sourceTree = "<group>"; };
+		47EC1A031A63A7B5009A8D6F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = PKYStepperExample/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		47EC1A041A63A7B5009A8D6F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = PKYStepperExample/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		47EC1A051A63A7B5009A8D6F /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Base.lproj; path = PKYStepperExample/Base.lproj; sourceTree = SOURCE_ROOT; };
+		47EC1A061A63A7B5009A8D6F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = PKYStepperExample/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		47EC1A071A63A7B5009A8D6F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PKYStepperExample/Info.plist; sourceTree = SOURCE_ROOT; };
+		47EC1A081A63A7B5009A8D6F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = PKYStepperExample/main.m; sourceTree = SOURCE_ROOT; };
+		47EC1A091A63A7B5009A8D6F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = PKYStepperExample/ViewController.h; sourceTree = SOURCE_ROOT; };
+		47EC1A0A1A63A7B5009A8D6F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = PKYStepperExample/ViewController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +62,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4722A6621A63A73E00A8B9A5 /* PKYStepperExample */ = {
+			isa = PBXGroup;
+			children = (
+				47EC1A031A63A7B5009A8D6F /* AppDelegate.h */,
+				47EC1A041A63A7B5009A8D6F /* AppDelegate.m */,
+				47EC1A051A63A7B5009A8D6F /* Base.lproj */,
+				47EC1A061A63A7B5009A8D6F /* Images.xcassets */,
+				47EC1A071A63A7B5009A8D6F /* Info.plist */,
+				47EC1A081A63A7B5009A8D6F /* main.m */,
+				47EC1A091A63A7B5009A8D6F /* ViewController.h */,
+				47EC1A0A1A63A7B5009A8D6F /* ViewController.m */,
+			);
+			name = PKYStepperExample;
+			path = PKYStepper/PKYStepperExample;
+			sourceTree = "<group>";
+		};
 		4752BC091A60B89A00A31EE5 = {
 			isa = PBXGroup;
 			children = (
-				4752BC141A60B89A00A31EE5 /* PKYStepperExample */,
+				4722A6621A63A73E00A8B9A5 /* PKYStepperExample */,
 				4752BC3B1A60B91200A31EE5 /* PKYStepper */,
 				4752BC2E1A60B89A00A31EE5 /* PKYStepperTests */,
 				4752BC131A60B89A00A31EE5 /* Products */,
@@ -77,31 +95,6 @@
 				4752BC2B1A60B89A00A31EE5 /* PKYStepperTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		4752BC141A60B89A00A31EE5 /* PKYStepperExample */ = {
-			isa = PBXGroup;
-			children = (
-				4752BC191A60B89A00A31EE5 /* AppDelegate.h */,
-				4752BC1A1A60B89A00A31EE5 /* AppDelegate.m */,
-				4752BC1C1A60B89A00A31EE5 /* ViewController.h */,
-				4752BC1D1A60B89A00A31EE5 /* ViewController.m */,
-				4752BC1F1A60B89A00A31EE5 /* Main.storyboard */,
-				4752BC221A60B89A00A31EE5 /* Images.xcassets */,
-				4752BC241A60B89A00A31EE5 /* LaunchScreen.xib */,
-				4752BC151A60B89A00A31EE5 /* Supporting Files */,
-			);
-			name = PKYStepperExample;
-			path = PKYStepper;
-			sourceTree = "<group>";
-		};
-		4752BC151A60B89A00A31EE5 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4752BC161A60B89A00A31EE5 /* Info.plist */,
-				4752BC171A60B89A00A31EE5 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		4752BC2E1A60B89A00A31EE5 /* PKYStepperTests */ = {
@@ -124,6 +117,8 @@
 		4752BC3B1A60B91200A31EE5 /* PKYStepper */ = {
 			isa = PBXGroup;
 			children = (
+				4722A6751A63A76400A8B9A5 /* PKYStepper.h */,
+				4722A6761A63A76400A8B9A5 /* PKYStepper.m */,
 			);
 			name = PKYStepper;
 			sourceTree = "<group>";
@@ -208,9 +203,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4752BC211A60B89A00A31EE5 /* Main.storyboard in Resources */,
-				4752BC261A60B89A00A31EE5 /* LaunchScreen.xib in Resources */,
-				4752BC231A60B89A00A31EE5 /* Images.xcassets in Resources */,
+				47EC1A0C1A63A7B5009A8D6F /* Base.lproj in Resources */,
+				47EC1A0D1A63A7B5009A8D6F /* Images.xcassets in Resources */,
+				47EC1A0E1A63A7B5009A8D6F /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,9 +223,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4752BC1E1A60B89A00A31EE5 /* ViewController.m in Sources */,
-				4752BC1B1A60B89A00A31EE5 /* AppDelegate.m in Sources */,
-				4752BC181A60B89A00A31EE5 /* main.m in Sources */,
+				47EC1A101A63A7B5009A8D6F /* ViewController.m in Sources */,
+				4722A6771A63A76400A8B9A5 /* PKYStepper.m in Sources */,
+				47EC1A0F1A63A7B5009A8D6F /* main.m in Sources */,
+				47EC1A0B1A63A7B5009A8D6F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,25 +247,6 @@
 			targetProxy = 4752BC2C1A60B89A00A31EE5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		4752BC1F1A60B89A00A31EE5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4752BC201A60B89A00A31EE5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4752BC241A60B89A00A31EE5 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4752BC251A60B89A00A31EE5 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4752BC331A60B89A00A31EE5 /* Debug */ = {
@@ -354,7 +331,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = PKYStepper/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PKYStepperExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -364,7 +341,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = PKYStepper/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PKYStepperExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -423,6 +400,7 @@
 				4752BC371A60B89A00A31EE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4752BC381A60B89A00A31EE5 /* Build configuration list for PBXNativeTarget "PKYStepperTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +409,7 @@
 				4752BC3A1A60B89A00A31EE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
