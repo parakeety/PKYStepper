@@ -29,7 +29,8 @@
     [super viewDidLoad];
     
     float width = 260.0f;
-    float x = ([UIScreen mainScreen].bounds.size.width - width) / 2.0;
+    float screenWidth = [UIScreen mainScreen].bounds.size.width;
+    float x = (screenWidth - width) / 2.0;
     
     // plain
     self.plainStepper = [[PKYStepper alloc] initWithFrame:CGRectMake(x, 100, width, 44)];
@@ -53,8 +54,14 @@
     [self.view addSubview:self.noneStepper];
     
     
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 300, screenWidth - 40, 80)];
+    label.text = @"Hides increment/decrement button when value is at maximum/minimum";
+    label.lineBreakMode = NSLineBreakByWordWrapping;
+    label.numberOfLines = 0;
+    [self.view addSubview:label];
+    
     // customize uicontrols exposed via property
-    self.hideButtonStepper = [[PKYStepper alloc] initWithFrame:CGRectMake(x, 300, width, 30)];
+    self.hideButtonStepper = [[PKYStepper alloc] initWithFrame:CGRectMake((screenWidth - 200) / 2, 400, 200, 30)];
     self.hideButtonStepper.maximum = 3.0f;
     self.hideButtonStepper.hidesDecrementWhenMinimum = YES;
     self.hideButtonStepper.hidesIncrementWhenMaximum = YES;
@@ -65,15 +72,19 @@
     self.hideButtonStepper.countLabel.layer.borderWidth = 0.0f;
     self.hideButtonStepper.countLabel.textColor = [UIColor darkGrayColor];
     
+    UIColor *buttonBackgroundColor = [UIColor colorWithRed:0.92 green:0.37 blue:0.0 alpha:1.0];
+    
     self.hideButtonStepper.incrementButton.layer.borderWidth = 1.0f;
-    self.hideButtonStepper.incrementButton.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.hideButtonStepper.incrementButton.layer.borderColor = buttonBackgroundColor.CGColor;
+    [self.hideButtonStepper.incrementButton setBackgroundColor:buttonBackgroundColor];
     self.hideButtonStepper.incrementButton.layer.cornerRadius = 5.0f;
-    [self.hideButtonStepper.incrementButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
     
     self.hideButtonStepper.decrementButton.layer.borderWidth = 1.0f;
-    self.hideButtonStepper.decrementButton.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.hideButtonStepper.decrementButton.layer.borderColor = buttonBackgroundColor.CGColor;
+    [self.hideButtonStepper.decrementButton setBackgroundColor:buttonBackgroundColor];
     self.hideButtonStepper.decrementButton.layer.cornerRadius = 5.0f;
-    [self.hideButtonStepper.decrementButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+    
+    [self.hideButtonStepper setButtonTextColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
     self.hideButtonStepper.valueChangedCallback = ^(PKYStepper *stepper, float count) {
         stepper.countLabel.text = [NSString stringWithFormat:@"Parakeets: %@", @(count)];
