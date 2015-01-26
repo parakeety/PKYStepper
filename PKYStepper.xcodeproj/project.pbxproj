@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		4722A6771A63A76400A8B9A5 /* PKYStepper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4722A6761A63A76400A8B9A5 /* PKYStepper.m */; };
 		4752BC321A60B89A00A31EE5 /* PKYStepperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4752BC311A60B89A00A31EE5 /* PKYStepperTests.m */; };
+		47569E891A64E86C00B43387 /* StoryboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47569E881A64E86C00B43387 /* StoryboardViewController.storyboard */; };
+		475FE0B51A7616BA0025EB94 /* StoryboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 475FE0B41A7616BA0025EB94 /* StoryboardViewController.m */; };
+		475FE0B71A76184E0025EB94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475FE0B61A76184E0025EB94 /* Main.storyboard */; };
+		475FE0BA1A7618740025EB94 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 475FE0B91A7618740025EB94 /* TableViewController.m */; };
 		47EC1A0B1A63A7B5009A8D6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EC1A041A63A7B5009A8D6F /* AppDelegate.m */; };
 		47EC1A0C1A63A7B5009A8D6F /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 47EC1A051A63A7B5009A8D6F /* Base.lproj */; };
 		47EC1A0D1A63A7B5009A8D6F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47EC1A061A63A7B5009A8D6F /* Images.xcassets */; };
@@ -34,6 +38,12 @@
 		4752BC2B1A60B89A00A31EE5 /* PKYStepperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PKYStepperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4752BC301A60B89A00A31EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4752BC311A60B89A00A31EE5 /* PKYStepperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKYStepperTests.m; sourceTree = "<group>"; };
+		47569E881A64E86C00B43387 /* StoryboardViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = StoryboardViewController.storyboard; path = PKYStepperExample/StoryboardViewController.storyboard; sourceTree = SOURCE_ROOT; };
+		475FE0B31A7616BA0025EB94 /* StoryboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoryboardViewController.h; path = PKYStepperExample/StoryboardViewController.h; sourceTree = SOURCE_ROOT; };
+		475FE0B41A7616BA0025EB94 /* StoryboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoryboardViewController.m; path = PKYStepperExample/StoryboardViewController.m; sourceTree = SOURCE_ROOT; };
+		475FE0B61A76184E0025EB94 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = PKYStepperExample/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		475FE0B81A7618740025EB94 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = PKYStepperExample/TableViewController.h; sourceTree = SOURCE_ROOT; };
+		475FE0B91A7618740025EB94 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = PKYStepperExample/TableViewController.m; sourceTree = SOURCE_ROOT; };
 		47EC1A031A63A7B5009A8D6F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = PKYStepperExample/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		47EC1A041A63A7B5009A8D6F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = PKYStepperExample/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		47EC1A051A63A7B5009A8D6F /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Base.lproj; path = PKYStepperExample/Base.lproj; sourceTree = SOURCE_ROOT; };
@@ -71,8 +81,14 @@
 				47EC1A061A63A7B5009A8D6F /* Images.xcassets */,
 				47EC1A071A63A7B5009A8D6F /* Info.plist */,
 				47EC1A081A63A7B5009A8D6F /* main.m */,
+				475FE0B81A7618740025EB94 /* TableViewController.h */,
+				475FE0B91A7618740025EB94 /* TableViewController.m */,
+				475FE0B61A76184E0025EB94 /* Main.storyboard */,
 				47EC1A091A63A7B5009A8D6F /* ViewController.h */,
 				47EC1A0A1A63A7B5009A8D6F /* ViewController.m */,
+				475FE0B31A7616BA0025EB94 /* StoryboardViewController.h */,
+				475FE0B41A7616BA0025EB94 /* StoryboardViewController.m */,
+				47569E881A64E86C00B43387 /* StoryboardViewController.storyboard */,
 			);
 			name = PKYStepperExample;
 			path = PKYStepper/PKYStepperExample;
@@ -204,8 +220,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				47EC1A0C1A63A7B5009A8D6F /* Base.lproj in Resources */,
+				475FE0B71A76184E0025EB94 /* Main.storyboard in Resources */,
 				47EC1A0D1A63A7B5009A8D6F /* Images.xcassets in Resources */,
 				47EC1A0E1A63A7B5009A8D6F /* Info.plist in Resources */,
+				47569E891A64E86C00B43387 /* StoryboardViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +242,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				47EC1A101A63A7B5009A8D6F /* ViewController.m in Sources */,
+				475FE0BA1A7618740025EB94 /* TableViewController.m in Sources */,
 				4722A6771A63A76400A8B9A5 /* PKYStepper.m in Sources */,
+				475FE0B51A7616BA0025EB94 /* StoryboardViewController.m in Sources */,
 				47EC1A0F1A63A7B5009A8D6F /* main.m in Sources */,
 				47EC1A0B1A63A7B5009A8D6F /* AppDelegate.m in Sources */,
 			);

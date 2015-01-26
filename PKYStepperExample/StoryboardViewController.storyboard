@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pY5-2Q-bRi">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Storyboard View Controller-->
+        <scene sceneID="0rC-Er-WJZ">
+            <objects>
+                <viewController id="pY5-2Q-bRi" customClass="StoryboardViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="onp-fU-O0n"/>
+                        <viewControllerLayoutGuide type="bottom" id="XEA-AB-TIi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1nB-lD-Nat">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TP0-u3-olp" customClass="PKYStepper">
+                                <rect key="frame" x="26" y="85" width="548" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="WT5-gN-elJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="TP0-u3-olp" secondAttribute="trailing" constant="10" id="Du7-hn-7uV"/>
+                            <constraint firstItem="TP0-u3-olp" firstAttribute="leading" secondItem="1nB-lD-Nat" secondAttribute="leadingMargin" constant="10" id="EuD-na-yep"/>
+                            <constraint firstItem="TP0-u3-olp" firstAttribute="top" secondItem="onp-fU-O0n" secondAttribute="bottom" constant="65" id="aLc-Uh-L3s"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="stepper" destination="TP0-u3-olp" id="TiB-yT-AMY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CUr-fl-7RA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="486" y="258"/>
+        </scene>
+    </scenes>
+</document>
