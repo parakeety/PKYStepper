@@ -62,6 +62,8 @@ For instruction on how to create a bridging header, please refer to [Apple's doc
 ```
 
 #### Creating PKYStepper by storyboard
+Drag `UIView` to your storyboard and change its class to `PKYStepper`. For actual example, take a look at `StoryboardViewController.storyboard` in example project.
+
 ```objective-c
 @property(nonatomic, weak) IBOutlet PKYStepper *stepper;
 
