@@ -44,10 +44,13 @@ IB_DESIGNABLE
 
 // view customization
 - (void)setBorderColor:(UIColor *)color;
-- (void)setTextColor:(UIColor *)color;
 - (void)setBorderWidth:(CGFloat)width;
 - (void)setCornerRadius:(CGFloat)radius;
+
+- (void)setLabelTextColor:(UIColor *)color;
 - (void)setLabelFont:(UIFont *)font;
+
+- (void)setButtonTextColor:(UIColor *)color forState:(UIControlState)state;
 - (void)setButtonFont:(UIFont *)font;
 
 @end

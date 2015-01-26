@@ -70,7 +70,8 @@ static const float kButtonWidth = 44.0f;
     
     UIColor *defaultColor = [UIColor colorWithRed:(79/255.0) green:(161/255.0) blue:(210/255.0) alpha:1.0];
     [self setBorderColor:defaultColor];
-    [self setTextColor:defaultColor];
+    [self setLabelTextColor:defaultColor];
+    [self setButtonTextColor:defaultColor forState:UIControlStateNormal];
     
     [self setLabelFont:[UIFont fontWithName:@"Avernir-Roman" size:14.0f]];
     [self setButtonFont:[UIFont fontWithName:@"Avenir-Black" size:24.0f]];
@@ -118,13 +119,6 @@ static const float kButtonWidth = 44.0f;
     self.countLabel.layer.borderColor = color.CGColor;
 }
 
-- (void)setTextColor:(UIColor *)color
-{
-    self.countLabel.textColor = color;
-    [self.incrementButton setTitleColor:color forState:UIControlStateNormal];
-    [self.decrementButton setTitleColor:color forState:UIControlStateNormal];
-}
-
 - (void)setBorderWidth:(CGFloat)width
 {
     self.layer.borderWidth = width;
@@ -135,9 +129,20 @@ static const float kButtonWidth = 44.0f;
     self.layer.cornerRadius = radius;
 }
 
+- (void)setLabelTextColor:(UIColor *)color
+{
+    self.countLabel.textColor = color;
+}
+
 - (void)setLabelFont:(UIFont *)font
 {
     self.countLabel.font = font;
+}
+
+- (void)setButtonTextColor:(UIColor *)color forState:(UIControlState)state
+{
+    [self.incrementButton setTitleColor:color forState:state];
+    [self.decrementButton setTitleColor:color forState:state];
 }
 
 - (void)setButtonFont:(UIFont *)font
