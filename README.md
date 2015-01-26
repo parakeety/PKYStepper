@@ -1,4 +1,4 @@
-# PKYStepper
+# PKYStepper [![CocoaPods](https://img.shields.io/cocoapods/v/PKYStepper.svg?style=flat)](http://cocoapods.org/?q=name%3APKYStepper) [![CocoaPods](https://img.shields.io/cocoapods/p/PKYStepper.svg?style=flat)](https://github.com/parakeety/PKYStepper) [![CocoaPods](https://img.shields.io/cocoapods/l/PKYStepper.svg?style=flat)](https://github.com/parakeety/PKYStepper/blob/master/LICENSE)
 
 PKYStepper is a customizable UIControl with stepper and label combined.
 
