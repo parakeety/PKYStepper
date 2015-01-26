@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name         = "PKYStepper"
   s.version      = "0.0.1"
-  s.summary      = "Customizable Stepper Control"
+  s.summary      = "UIControl with label & stepper combined"
   s.description  = <<-DESC
-                    A customizabel stepper control with stepper & label combined.
+                    A customizable UIControl with label & stepper combined.
                    DESC
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "yohei okada" => "okada.yohei@gmail.com" }
