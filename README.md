@@ -8,6 +8,11 @@ PKYStepper is a customizable UIControl with stepper and label combined.
 iOS6+
 
 
+## Features
+- block based callback for when value changed, value incremented, and value decremented
+- toggle visibility of increment/decrement button when the value is at maximun/minimum
+
+
 ## Installation
 You can either install using cocoapods(recommended) or copying files manually.
 
