@@ -13,7 +13,7 @@ You can either install using cocoapods(recommended) or copying files manually.
 
 ### 1. Cocoapods(Recommended)
 In your Podfile, add a line
-```
+```ruby
 pod 'PKYStepper', '~> 0.1'
 ```
 then, run `pod install`.
@@ -37,7 +37,7 @@ For instruction on how to create a bridging header, please refer to [Apple's doc
 ## Usage
 ### Example
 #### Creating PKYStepper by code
-```
+```objective-c
 @property(nonatomic, strong) PKYStepper *stepper;
 
 - (void)viewDidLoad {
@@ -56,7 +56,7 @@ For instruction on how to create a bridging header, please refer to [Apple's doc
 ```
 
 #### Creating PKYStepper by storyboard
-```
+```objective-c
 @property(nonatomic, weak) IBOutlet PKYStepper *stepper;
 
 - (void)viewDidLoad {
@@ -71,7 +71,7 @@ For instruction on how to create a bridging header, please refer to [Apple's doc
 
 ### Basic Usage
 Set a callback and call `setup`.
-```
+```objective-c
 PKYStepper *aStepper = [[PKYStepper alloc] initWithFrame:frame];
 aStepper.valueChangedCallback = ^(PKYStepper *stepper, float count) {
   stepper.countLabel.text = [NSString stringWithFormat:@"%@", @(count)];
@@ -82,7 +82,7 @@ aStepper.valueChangedCallback = ^(PKYStepper *stepper, float count) {
 
 
 ### Customization
-```
+```objective-c
 float value; // default: 0.0
 float stepInterval; // default: 1.0
 float minimum; // default: 0.0
