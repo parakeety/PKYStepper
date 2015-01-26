@@ -1,6 +1,6 @@
 # PKYStepper
 
-PKYStepper is a customizable stepper control.
+PKYStepper is a customizable stepper control with stepper and label combined.
 
 <img src="screenshot.png" width="300px;" />
 
