@@ -7,6 +7,7 @@ Pod::Spec.new do |s|
                    DESC
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "yohei okada" => "okada.yohei@gmail.com" }
+  s.homepage     = "https://github.com/parakeety/PKYStepper"
   s.platform     = :ios
   s.ios.deployment_target = "6.0"
   s.source       = { :git => "https://github.com/parakeety/PKYStepper.git", :tag => '0.1.1' }
