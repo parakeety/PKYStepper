@@ -20,7 +20,7 @@ You can either install using cocoapods(recommended) or copying files manually.
 ### 1. Cocoapods(Recommended)
 In your Podfile, add a line
 ```ruby
-pod 'PKYStepper', '~> 0.1'
+pod 'PKYStepper', '0.0.1'
 ```
 then, run `pod install`.
 
