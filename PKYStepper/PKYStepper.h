@@ -58,6 +58,7 @@ IB_DESIGNABLE
 - (void)setLabelColor:(UIColor *)color;
 
 - (void)setButtonTextColor:(UIColor *)color forState:(UIControlState)state;
+- (void)setButtonBackgroundColor:(UIColor *)color
 - (void)setButtonFont:(UIFont *)font;
 
 @end
