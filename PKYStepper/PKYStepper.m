@@ -43,14 +43,15 @@ static const float kButtonWidth = 44.0f;
 {
     _value = 0.0f;
     _stepInterval = 1.0f;
-    _minimum = 0.0f;
-    _maximum = 100.0f;
+    _minimumValue = 0.0f;
+    _maximumValue = 100.0f;
     _hidesDecrementWhenMinimum = NO;
     _hidesIncrementWhenMaximum = NO;
     _buttonWidth = kButtonWidth;
     
     self.clipsToBounds = YES;
-    [self setBorderWidth:1.0f];
+    borderWidth = 1.0f;
+    [self setBorderWidth:borderWidth];
     [self setCornerRadius:3.0];
     
     self.countLabel = [[UILabel alloc] init];
@@ -69,9 +70,16 @@ static const float kButtonWidth = 44.0f;
     [self addSubview:self.decrementButton];
     
     UIColor *defaultColor = [UIColor colorWithRed:(79/255.0) green:(161/255.0) blue:(210/255.0) alpha:1.0];
-    [self setBorderColor:defaultColor];
-    [self setLabelTextColor:defaultColor];
-    [self setButtonTextColor:defaultColor forState:UIControlStateNormal];
+    borderColor = defaultColor;
+    labelTextColor = defaultColor;
+    buttonTextColor = defaultColor;
+    buttonBackgroundColor = [UIColor whiteColor];
+    labelColor = [UIColor whiteColor];
+    
+    [self setBorderColor:borderColor];
+    [self setLabelTextColor:labelTextColor];
+    [self setLabelColor:labelColor];
+    [self setButtonBackgroundColor:buttonBackgroundColor];
     
     [self setLabelFont:[UIFont fontWithName:@"Avernir-Roman" size:14.0f]];
     [self setButtonFont:[UIFont fontWithName:@"Avenir-Black" size:24.0f]];
@@ -90,6 +98,8 @@ static const float kButtonWidth = 44.0f;
     
     self.incrementButton.hidden = (self.hidesIncrementWhenMaximum && [self isMaximum]);
     self.decrementButton.hidden = (self.hidesDecrementWhenMinimum && [self isMinimum]);
+    
+    [self setButtonTextColor:buttonTextColor forState:UIControlStateNormal];
 }
 
 - (void)setup
@@ -129,6 +139,11 @@ static const float kButtonWidth = 44.0f;
     self.layer.cornerRadius = radius;
 }
 
+- (void)setLabelColor:(UIColor *)color
+{
+    self.countLabel.backgroundColor = color;
+}
+
 - (void)setLabelTextColor:(UIColor *)color
 {
     self.countLabel.textColor = color;
@@ -143,6 +158,12 @@ static const float kButtonWidth = 44.0f;
 {
     [self.incrementButton setTitleColor:color forState:state];
     [self.decrementButton setTitleColor:color forState:state];
+}
+
+-(void)setButtonBackgroundColor:(UIColor *)color
+{
+    [self.incrementButton setBackgroundColor:color];
+    [self.decrementButton setBackgroundColor:color];
 }
 
 - (void)setButtonFont:(UIFont *)font
@@ -177,7 +198,7 @@ static const float kButtonWidth = 44.0f;
 #pragma mark event handler
 - (void)incrementButtonTapped:(id)sender
 {
-    if (self.value < self.maximum)
+    if (self.value < self.maximumValue)
     {
         self.value += self.stepInterval;
         if (self.incrementCallback)
@@ -189,7 +210,7 @@ static const float kButtonWidth = 44.0f;
 
 - (void)decrementButtonTapped:(id)sender
 {
-    if (self.value > self.minimum)
+    if (self.value > self.minimumValue)
     {
         self.value -= self.stepInterval;
         if (self.decrementCallback)
@@ -203,12 +224,12 @@ static const float kButtonWidth = 44.0f;
 #pragma mark private helpers
 - (BOOL)isMinimum
 {
-    return self.value == self.minimum;
+    return self.value == self.minimumValue;
 }
 
 - (BOOL)isMaximum
 {
-    return self.value == self.maximum;
+    return self.value == self.maximumValue;
 }
 
 @end
