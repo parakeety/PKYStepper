@@ -42,6 +42,38 @@ For instruction on how to create a bridging header, please refer to [Apple's doc
 
 ## Usage
 ### Example
+#### Creating PKYStepper by storyboard
+Drag `UIView` to your storyboard and change its class to `PKYStepper`. For actual example, take a look at `StoryboardViewController.storyboard` in example project.
+
+```objective-c
+@property(nonatomic, weak) IBOutlet PKYStepper *stepper;
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.stepper.value = 5.0f;
+    self.stepper.stepInterval = 5.0f;
+    self.stepper.valueChangedCallback = ^(PKYStepper *stepper, float count) {
+        stepper.countLabel.text = [NSString stringWithFormat:@"Count: %@", @(count)];
+    };
+    [self.stepper setup];
+}
+```
+
+```swift
+@IBOutlet weak var stepper: PKYStepper
+
+override func viewDidLoad() {
+  super.viewDidLoad()
+
+  stepper.value = 5.0
+  stepper.stepInterval = 5.0
+  stepper.valueChangedCallback = { stepper, count in
+    stepper.countLabel.text = "Dogs: \(count)"
+  }
+  stepper.setup()
+}
+```
+
 #### Creating PKYStepper by code
 ```objective-c
 @property(nonatomic, strong) PKYStepper *stepper;
@@ -61,31 +93,24 @@ For instruction on how to create a bridging header, please refer to [Apple's doc
 }
 ```
 
-#### Creating PKYStepper by storyboard
-Drag `UIView` to your storyboard and change its class to `PKYStepper`. For actual example, take a look at `StoryboardViewController.storyboard` in example project.
-
-```objective-c
-@property(nonatomic, weak) IBOutlet PKYStepper *stepper;
-
-- (void)viewDidLoad {
-    self.stepper.value = 5.0f;
-    self.stepper.stepInterval = 5.0f;
-    self.stepper.valueChangedCallback = ^(PKYStepper *stepper, float count) {
-        stepper.countLabel.text = [NSString stringWithFormat:@"Count: %@", @(count)];
-    };
-    [self.stepper setup];
-}
-```
-
 ### Basic Usage
 Set a callback and call `setup`.
 ```objective-c
-PKYStepper *aStepper = [[PKYStepper alloc] initWithFrame:frame];
-aStepper.valueChangedCallback = ^(PKYStepper *stepper, float count) {
+PKYStepper *stepper = [[PKYStepper alloc] initWithFrame:frame];
+stepper.valueChangedCallback = ^(PKYStepper *stepper, float count) {
   stepper.countLabel.text = [NSString stringWithFormat:@"%@", @(count)];
 };
-[aStepper setup];
+[stepper setup];
 [self.view addSubview:stepper];
+```
+
+```swift
+let stepper = PKYStepper(frame: frame)
+stepper.valueChangedCallback = { stepper, count in
+  stepper.countLabel.text = "\(count)"
+}
+stepper.setup()
+self.view.addSubview(stepper)
 ```
 
 
@@ -116,6 +141,7 @@ PKYStepperDecrementedCallback decrementCallback;
 - (void)setButtonTextColor:(UIColor *)color forState:(UIControlState)state;
 - (void)setButtonFont:(UIFont *)font;
 ```
+
 
 ### Further Customization
 CountLabel and buttons are exposed as properties, so customize using the properties if you need further control.
