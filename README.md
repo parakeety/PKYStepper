@@ -9,8 +9,8 @@ iOS6+
 
 
 ## Features
-- block based callback for when value changed, value incremented, and value decremented
-- toggle visibility of increment/decrement button when the value is at maximun/minimum
+- block based callback for when value changed, incremented, and decremented
+- toggle visibility of increment/decrement button when the value reached its maximun/minimum
 - works well with storyboard
 
 
