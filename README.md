@@ -144,5 +144,5 @@ PKYStepperDecrementedCallback decrementCallback;
 
 
 ### Further Customization
-CountLabel and buttons are exposed as properties, so customize using the properties if you need further control.
+CountLabel and buttons are exposed as properties, so customize the properties if you need further control.
 
